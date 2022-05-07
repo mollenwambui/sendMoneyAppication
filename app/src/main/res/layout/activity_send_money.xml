@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".`sendMoneyActivity.kt`">
+
+    <ImageView
+        android:id="@+id/imgphone"
+        android:layout_width="96dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etPhonenumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_phone_24" />
+
+    <EditText
+        android:id="@+id/etPhonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Phone number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="phone number" />
+
+    <ImageView
+        android:id="@+id/imgpin"
+        android:layout_width="47dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etpin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etpin"
+        app:srcCompat="@drawable/ic_baseline_remove_red_eye_24" />
+
+    <EditText
+        android:id="@+id/etpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="360dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="pin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="212dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnsendmoney"
+        android:layout_width="97dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="204dp"
+        android:text="Send "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgamount"
+        android:layout_width="82dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_monetization_on_24"
+        app:layout_constraintBottom_toBottomOf="@+id/etamount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhonenumber"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="Amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
